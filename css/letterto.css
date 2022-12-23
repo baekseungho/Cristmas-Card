@@ -1,0 +1,144 @@
+*{
+  margin :0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  height:1500px;
+	background-image:url('../image/backgroundimg.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  padding-top:50px;
+}
+
+.letter{
+  width:600px;
+  height:700px;
+  background-image:url('../image/letter1.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  margin:auto;
+  border:4px solid rgb(206, 206, 206);
+  border-radius: 5px;
+  text-align: center;
+}
+.textbox{
+  margin:300px auto;
+  text-align: center;
+  width:500px;
+  height:600px;
+  color:black;
+  font-size:20px;
+  font-weight: 700;
+  font-family: 'Jua', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.to{
+  margin-left:15px;
+  font-family: 'Jua', sans-serif;
+  color:white;
+}
+.letterto{
+  width:600px;
+  height:700px;
+  background-image:url('../image/back1.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  margin:auto;
+  border:4px solid rgb(206, 206, 206);
+  border-radius: 5px;
+}
+.imgbox{
+  margin-top:142px;
+  height:600px;
+}
+.imgbox .item{
+  width:593px;
+  height:300px;
+}
+.letterto .item1{
+  margin-top:200px;
+  margin-left:40px;
+  position: relative;
+  width:500px;
+  height:300px;
+}
+.letterto .letter{
+  width:594px;
+  height:350px;
+  margin-top:-500px;
+  margin-bottom: 15px;
+  border:none;
+}
+.letterto .letter:hover{
+  border:3px solid rgb(255, 0, 0);
+}
+.img-box{
+  display: flex;
+}
+.rodolf{
+  width:500px;
+  height:500px;
+}
+.santa{
+  width:400px;
+  height:500px;
+}
+.fa-snowflake {
+  margin-top:-750px;
+	animation: fall 5s linear forwards;
+	color: #fff;
+	position: absolute;
+}
+@keyframes fall {
+	to {
+		transform: translateY(90vh);
+	}
+}
+
+#remain-time{
+  width:450px;
+  color:white;
+  margin-right: 50px;
+  font-size:30px;
+  font-weight: 500;
+  font-family: 'Jua', sans-serif;
+  border:5px solid white;
+  border-radius: 10px;
+  margin-left:auto;
+  text-align: center;
+}
+
+.img-box{
+  position:absolute;
+  left:100px;
+  width:100px;
+  height:50px;
+  margin-left:-200px;
+  color:#fff;
+  animation: compare 2s infinite alternate;
+
+
+}
+.ease{
+ animation-timing-function:ease;
+}
+.ease_in_out{
+  top:100px;
+  animation-timing-function:ease-in-out;
+}
+
+
+@-webkit-keyframes compare{
+  from{
+    left:300px;
+  }
+  to{
+    left:100px;
+  }
+}
+

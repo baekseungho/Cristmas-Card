@@ -1,0 +1,148 @@
+*{
+  margin :0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  height:1500px;
+	background-image:url('../image/backgroundimg.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  padding:30px;
+}
+.card:hover{
+  opacity: 1;
+}
+
+.audiobox{
+  display: flex;
+  justify-content: end;
+  margin-left :auto;
+}
+.card{
+  width:400px;
+  height:700px;
+  background-image:url('../image/card2.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  border:3px solid white;
+  border-radius: 5px;
+  margin:auto;
+  opacity: -.5;
+  transition: transform .1s ease;
+  transform: translate(0,0);
+  transition: opacity .25s ease-in-out;
+}
+.textbox{
+  color:white;
+  margin:auto;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50px;
+  font-family: 'Jua', sans-serif;
+  text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
+}
+.textbox:hover{
+  color:rgb(255, 53, 53);
+}
+
+.imgbox {
+  text-align: center;
+  margin-top: 350px; 
+}
+.imgbox img{
+  margin-top:-500px;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  border:3px solid white;
+} 
+.imgbox img:hover{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  border:3px solid rgb(255, 0, 0);
+} 
+.santa{
+  width:200px;
+  height:400px;
+  margin-left: 396px;
+  margin-bottom: -300px;
+}
+.fa-snowflake {
+  margin-top:-750px;
+	animation: fall 5s linear forwards;
+	color: #fff;
+	position: absolute;
+}
+@keyframes fall {
+	to {
+		transform: translateY(90vh);
+	}
+}
+.blinking{
+  -webkit-animation: blink 0.5s ease-in-out infinite alternate;
+  -moz-animation: blink 0.5s ease-in-out infinite alternate;
+  animation: blink 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes blink{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes blink{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* hover */
+.container {
+  font-size: 0;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.bcard {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 400px;
+  width: 600px;
+  /*
+  Each "card" is set to 600x400px because that is the size of  the image, adjust as needed. Make sure the overflow is set to hidden or else when the img scales it will clip with the other images.
+  */
+}
+
+.img-container {
+  transition: transform .1s ease;
+}
+
+.img-container:hover {
+  transform: scale(1.1);
+  /*
+  Change the scale value as much as you want to change the amount of zoom on hover.
+  */
+}
+
+.bcard img {
+  opacity: .5;
+  transform: translate(0,0);
+  /*
+  Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+  */
+  transition: opacity .25s ease-in-out;
+}
+
+.bcard img:hover {
+  opacity: 1;
+}
